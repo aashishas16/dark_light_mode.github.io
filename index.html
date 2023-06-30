@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <div class="container">
-        <input type="text" id="entereddate" placeholder="MM/dd/yyyy">
-        <button id="see">Set</button>
-        <h2> Time left  <span style='font-size:20px;'>&#127851;</span></h2>
-        <div class="countertimer">
-            <p><span class="days">365 </span> days</p>
-            <p><span class="hours">24 </span> hours</p>
-            <p><span class="minutes">60 </span> min</p>
-            <p><span class="seconds">60 </span> sec</p>
+
+<body class="white" id="bd">
+    <div id="wrapper">
+        <button id="btn" class="black"><span>TOUCH</span></button>
+        <div id="content">
+            <h1>CHANGE DARK AND LIGHT MODE</h1>
+            <p>Light and dark mode in web development refer to two different color schemes or themes that can be applied to a website or web application based on user preferences or system settings. Light mode typically uses a bright background with dark text and elements, while dark mode uses a dark background with light text and elements.
+
+                Implementing light and dark mode involves adjusting the color palette, contrast, and other design elements to ensure a visually pleasing and accessible experience for users. Here are some key aspects to consider when working with light and dark mode:
+                
+                1. Color Palette: Choose appropriate colors for both light and dark modes. For light mode, opt for brighter hues and ensure sufficient contrast between the background and text. In dark mode, select darker shades that are comfortable to read without straining the eyes. It's crucial to maintain readability and accessibility in both modes.
+                
+                2. Contrast: Maintain a suitable contrast ratio between text and background elements to ensure legibility. For light mode, dark text on a light background is typically preferred. In dark mode, use light text on a dark background. Aim for a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text (as per WCAG guidelines).
+                
+                3. Element Styling: Adjust the styling of various elements such as buttons, links, forms, and icons to suit both light and dark modes. Ensure that these elements are easily distinguishable and visible in both color schemes. You may need to modify shadows, borders, and other visual effects accordingly.
+                
+                4. System Preference Detection: Allow users to switch between light and dark mode manually if desired. Additionally, detect the user's system settings or preferences and automatically switch to the appropriate mode. This can be achieved using CSS media queries or JavaScript to check the `prefers-color-scheme` media feature.
+                
+                5. User Preferences: Provide a user interface control, such as a toggle switch, to let users choose their preferred mode regardless of their system settings. Remember to store and retrieve this preference across sessions to maintain continuity.
+                
+                6. Testing and Optimization: Thoroughly test your website or application in both light and dark modes across different devices and browsers. Pay attention to readability, usability, and any potential visual issues. Optimize your code and assets to ensure efficient loading and rendering in both modes.
+                
+                By offering light and dark mode options, you provide users with greater flexibility and enhance their experience by accommodating their visual preferences and reducing eye strain. It's essential to prioritize accessibility, readability, and aesthetic consistency when implementing light and dark mode in web development.</p>
         </div>
     </div>
-   
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
